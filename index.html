@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .text1 {
+        font-family: 'PinkKangaroo';
+        font-size: 50px;
+      }
+      .text2 {
+        font-family: 'AlinSquareEmoji';
+        font-size: 50px;
+      }
+      .text3 {
+        font-family: 'KatastrofeDemo';
+        font-size: 50px;
+      }
+      .text4 {
+        font-family: 'MarchIntoSpring';
+        font-size: 50px;
+      }
+    </style>
+    <script src="js/FontFaceLoader.js"></script>
+    <script>
+
+      function load() {
+        var fonts = [
+          {url: 'fonts/Pink kangaroo.ttf', name: 'PinkKangaroo'},
+          {url: 'fonts/Alin_Square_Emoji.ttf', name: 'AlinSquareEmoji'},
+          {url: 'fonts/katastrofeDEMO.otf', name: 'KatastrofeDemo'},
+          {url: 'fonts/March into Spring - TTF.ttf', name: 'MarchIntoSpring'},
+          {url: 'fonts/Pink kangaroo.ttf', name: 'PinkKangaroo'},
+        ];
+        fonts.forEach(function(font) {
+          var loader = new FontFaceLoader(font.url, font.name);
+          loader.load().then(
+            function(fontFaceLoader) {
+              console.log('font success', fontFaceLoader);
+            },
+            function(error) {
+              console.log(error);
+            });
+        });
+      }
+
+    </script>
+  </head>
+  <body onload="load()">
+    <span class="text1">LOAD TESTING</span><br />
+    <span class="text2">LOAD TESTING</span><br />
+    <span class="text3">LOAD TESTING</span><br />
+    <span class="text4">LOAD TESTING</span><br />
+  </body>
+</html>
