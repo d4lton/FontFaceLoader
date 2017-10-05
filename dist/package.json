@@ -1,0 +1,16 @@
+{
+  "name": "FontFaceLoader",
+  "version": "1.0.0",
+  "description": "A simple language lexical analyzer, parser and interpreter",
+  "homepage": "https://github.com/d4lton/FontFaceLoader",
+  "repository": "d4lton/FontFaceLoader",
+  "author": "Dana Basken <dbasken@gmail.com>",
+  "contributors": [],
+  "license": "MIT",
+  "keywords": [],
+  "main": "FontFaceLoader.js",
+  "jsnext:main": "FontFaceLoader.es.js",
+  "dependencies": {
+    "babel-runtime": "^6.11.6"
+  }
+}

@@ -1,9 +1,11 @@
 class FontFaceLoader {
+
   constructor(url, name) {
     this.url = url;
     this.name = name;
     this.alreadyLoaded = false;
-  }
+  };
+
   load() {
     return new Promise(function(resolve, reject) {
       var xhr = new XMLHttpRequest();
@@ -37,8 +39,12 @@ class FontFaceLoader {
         xhr.send();
       }
     }.bind(this));
-  }
+  };
+
   fontFaceExists() {
     return (document.head.querySelector('style[fontfaceloadername="' + this.name + '"]') !== null);
-  }
-}
+  };
+
+};
+
+export default FontFaceLoader;
