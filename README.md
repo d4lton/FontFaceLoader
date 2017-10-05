@@ -2,7 +2,7 @@
 
 A small Javascript class to load a font-face from a URL.
 
-In order to support a technical need for loading remote fonts, and knowing when and if those fonts loaded successfully (and why), I wrote this small class.
+In order to support a technical need for loading remote fonts (both in Chrome and Firefox, as well as PhantomJS), and knowing when and if those fonts loaded successfully (and why), I wrote this small class.
 
 To use it, simply construct a FontFaceLoader object, passing the URL and intended font-family name:
 
